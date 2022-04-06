@@ -1,0 +1,28 @@
+/* Unvisited link */
+a:link {
+    color: green;
+}
+
+/* visited link */
+a:visited {
+    color: darkgrey;
+}
+
+/*hover over link*/
+a:hover {
+    color: hotpink;
+}
+
+/*holding down a link*/
+a:active {
+    color: yellow;
+    background-color: blue;
+}
+
+a:last-of-type {
+    background-color: rgb(235, 197, 128);
+}
+
+a:nth-of-type(5) {
+    font-style: italic;
+}

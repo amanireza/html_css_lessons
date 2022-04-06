@@ -1,0 +1,43 @@
+@use "palette";
+
+// default styling for text elements
+// standardise some stuff, font color
+
+$primary-header: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $primary-header;
+    color: map-get(palette.$font-colors, "header"); //color: #222
+}
+
+p,
+a,
+li {
+    font-family: $primary-header;
+    color: map-get(palette.$font-colors, "body"); //color: #444
+}
+
+// Fragment
+%display {
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+$display-sizes: (6rem, 5.5rem, 4.5rem, 3.5rem, 2.5rem, 1.5rem, 1rem);
+
+@for $i from 1 through length($display-sizes) {
+    $font-size: nth($display-sizes, $i);
+
+    .display-#{$i} {
+        font-size: $font-size;
+        @extend %display;
+    }
+}
+
+// for each of the values in my list
+// I want to create a .display-n, that has the font-size, and extends my display fragment

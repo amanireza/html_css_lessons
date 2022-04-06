@@ -1,0 +1,11 @@
+@use "palette";
+
+table,
+th,
+td {
+    border: 1px solid;
+}
+
+th {
+    color: palette.$primary-color;
+}

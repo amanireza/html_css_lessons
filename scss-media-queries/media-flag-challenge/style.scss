@@ -1,0 +1,49 @@
+$sm: 600px;
+$md: 900px;
+
+// we want to change colour depending on screen size and we want to change the height and width depending on the screen size //
+
+@mixin size-modifier($height, $width) {
+    height: $height;
+    width: $width;
+}
+
+@mixin stripe-color($firstColor, $secondColor, $thirdColor) {
+    &--one {
+        background-color: $firstColor;
+    }
+    &--two {
+        background-color: $secondColor;
+    }
+    &--three {
+        background-color: $thirdColor;
+    }
+}
+
+.flag {
+    border: 1px solid black;
+    @include size-modifier(40vh, 90vw);
+
+    @media only screen and (max-width: $sm) {
+        &__stripe {
+            @include size-modifier(33.3333%, 100%);
+            @include stripe-color(black, red, yellow);
+        }
+    }
+
+    @media only screen and (min-width: ($sm + 1px)) and (max-width: $md) {
+        display: flex;
+        &__stripe {
+            @include size-modifier(100%, 33.3333%);
+            @include stripe-color(black, yellow, red);
+        }
+    }
+
+    @media only screen and (max-width: ($md + 1px)) {
+        display: flex;
+        &__stripe {
+            @include size-modifier(100%, 33.3333%);
+            @include stripe-color(green, white, orange);
+        }
+    }
+}

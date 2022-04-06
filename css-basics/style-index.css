@@ -1,0 +1,31 @@
+h1 {
+    color: orange;
+    font-family: "Franklin Gothic Medium", "Arial Narrow";
+}
+
+p {
+    background-color: purple;
+    border: 3px dotted green;
+    font-weight: 100;
+    font-style: italic;
+    color: blueviolet;
+}
+
+/* class selecotr */
+.first {
+    color: aqua;
+    font-weight: 900;
+}
+
+/*id selector*/
+#paraWithId {
+    border: 5px groove grey;
+}
+#h1withId {
+    color: goldenrod;
+}
+
+/* class <first inside id <container>*/
+#container .first {
+    background-color: red;
+}

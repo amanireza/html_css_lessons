@@ -1,0 +1,53 @@
+.mainContainer {
+    width: 600px;
+    border: 1px solid black;
+
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+p {
+    height: 100px;
+    width: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#card1 {
+    background-color: #aed8e5;
+}
+#card2 {
+    background-color: #f08180;
+}
+#card3 {
+    background-color: #90ee90;
+}
+#card4 {
+    background-color: #ff9f7a;
+}
+#card5 {
+    background-color: #ffb6c0;
+}
+#card6 {
+    background-color: #d3d3d3;
+}
+#card7 {
+    background-color: #e0fffe;
+}
+#card8 {
+    background-color: #87cdfa;
+}
+
+.horizontal {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+}
+.vertical {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column-reverse;
+}

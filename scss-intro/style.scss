@@ -1,0 +1,32 @@
+.container {
+    border: 1px solid black;
+
+    &__header {
+        color: blue;
+    }
+
+    &__text {
+        font-family: arial;
+
+        &--special {
+            color: green;
+        }
+    }
+}
+
+.container2 {
+    border: 2px solid purple;
+
+    &__text {
+        font-weight: bold;
+        color: green;
+    }
+
+    &__btn {
+        background-color: yellow;
+
+        &--extra {
+            background-color: red;
+        }
+    }
+}

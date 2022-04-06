@@ -1,0 +1,185 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: #333;
+}
+
+p,
+a,
+li {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: #666;
+}
+
+.display-7, .display-6, .display-5, .display-4, .display-3, .display-2, .display-1 {
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.display-1 {
+  font-size: 6rem;
+}
+
+.display-2 {
+  font-size: 5.5rem;
+}
+
+.display-3 {
+  font-size: 4.5rem;
+}
+
+.display-4 {
+  font-size: 3.5rem;
+}
+
+.display-5 {
+  font-size: 2.5rem;
+}
+
+.display-6 {
+  font-size: 1.5rem;
+}
+
+.display-7 {
+  font-size: 1rem;
+}
+
+.button, .pill {
+  color: white;
+  background-color: #9696e4;
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 30px;
+  border: 1px solid #2626be;
+}
+.button:hover, .pill:hover {
+  cursor: pointer;
+  background-color: #444;
+}
+.button:hover--primary, .pill:hover--primary {
+  background-color: #2626be;
+}
+.button:hover--primary:hover, .pill:hover--primary:hover {
+  background-color: #2626be;
+}
+.button:hover--secondary, .pill:hover--secondary {
+  background-color: #444;
+}
+.button:hover--secondary:hover, .pill:hover--secondary:hover {
+  background-color: #444;
+}
+.button:hover--success, .pill:hover--success {
+  background-color: #045804;
+}
+.button:hover--success:hover, .pill:hover--success:hover {
+  background-color: #045804;
+}
+.button:hover--danger, .pill:hover--danger {
+  background-color: #c40202;
+}
+.button:hover--danger:hover, .pill:hover--danger:hover {
+  background-color: #c40202;
+}
+.button:hover--warning, .pill:hover--warning {
+  background-color: #ffd000;
+}
+.button:hover--warning:hover, .pill:hover--warning:hover {
+  background-color: #ffd000;
+}
+.button:hover--info, .pill:hover--info {
+  background-color: #086b6b;
+}
+.button:hover--info:hover, .pill:hover--info:hover {
+  background-color: #086b6b;
+}
+.button--sm {
+  font-size: 0.8rem;
+  padding: 5px;
+}
+.button--md {
+  font-size: 1rem;
+  padding: 10px;
+}
+.button--lg {
+  font-size: 1.2rem;
+  padding: 15px;
+}
+.button--primary {
+  background-color: #9696e4;
+}
+.button--secondary {
+  background-color: #444;
+}
+.button--success {
+  background-color: green;
+}
+.button--danger {
+  background-color: red;
+}
+.button--warning {
+  background-color: #ffd000;
+}
+.button--info {
+  background-color: #099e9e;
+}
+
+.pill {
+  border-radius: 30px;
+  padding: 4px;
+  font-size: 0.5rem;
+}
+.pill:hover {
+  background-color: #2626be;
+}
+.pill--sm {
+  font-size: 0.4rem;
+  padding: 3px;
+}
+.pill--md {
+  font-size: 0.5rem;
+  padding: 4px;
+}
+.pill--lg {
+  font-size: 0.6rem;
+  padding: 6px;
+}
+.pill--primary {
+  background-color: #9696e4;
+}
+.pill--secondary {
+  background-color: #444;
+}
+.pill--success {
+  background-color: green;
+}
+.pill--danger {
+  background-color: red;
+}
+.pill--warning {
+  background-color: #ffd000;
+}
+.pill--info {
+  background-color: #099e9e;
+}
+.pill--primary {
+  background-color: #2626be;
+}
+.pill--secondary {
+  background-color: #444;
+}
+.pill--success {
+  background-color: #045804;
+}
+.pill--danger {
+  background-color: #c40202;
+}
+.pill--warning {
+  background-color: #ffd000;
+}
+.pill--info {
+  background-color: #086b6b;
+}

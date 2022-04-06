@@ -1,0 +1,104 @@
+body {
+    font-family: Arial;
+}
+.container {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 2fr 1fr 2fr 1fr;
+    grid-template-rows: 90px 270px 90px 270px;
+    grid-template-areas:
+        "headerArtist headerArtist headerArtist headerBooks"
+        "one two two three"
+        "four two two three"
+        "four five six three";
+}
+.container > div {
+    border: 1px solid black;
+    padding: 20px;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+}
+.large {
+    width: 200px;
+    height: 200px;
+}
+
+.medium {
+    width: 150px;
+    height: 150px;
+}
+.small {
+    width: 100px;
+    height: 100px;
+}
+
+#headerArtist {
+    grid-area: headerArtist;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#headerBooks {
+    grid-area: headerBooks;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#one {
+    grid-area: one;
+    display: flex;
+    justify-content: space-between;
+}
+#oneText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#two {
+    grid-area: two;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#tomImages {
+    display: flex;
+    justify-content: space-between;
+}
+
+#three {
+    grid-area: three;
+}
+
+#four {
+    grid-area: four;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+}
+
+#five {
+    grid-area: five;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#six {
+    grid-area: six;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}

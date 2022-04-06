@@ -1,0 +1,26 @@
+body {
+    font-family: "Roboto", sans-serif;
+}
+h1 {
+    color: orange;
+}
+
+.right-side {
+    text-align: right;
+}
+
+h3 {
+    color: green;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    border: 2px solid black;
+    font-weight: bolder;
+}
+
+#underLine {
+    text-decoration: underline;
+    font-style: italic;
+}

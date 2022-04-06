@@ -1,0 +1,15 @@
+.navbar {
+  border: 2px solid black;
+}
+.navbar__list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn {
+  background-color: blue;
+}
+.btn--extra {
+  background-color: yellow;
+}

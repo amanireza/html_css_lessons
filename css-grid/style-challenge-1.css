@@ -1,0 +1,42 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    height: 500px;
+}
+.container > section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cell {
+    background-color: yellow;
+}
+
+#header {
+    background-color: #6f94e6;
+    grid-column: 1 / span 3;
+    padding: 20px;
+}
+
+#coding {
+    background-color: #f1dfb8;
+    grid-column: 1 / span 2;
+}
+
+.cell {
+    background-color: #a1fcd7;
+}
+
+#cooking {
+    background-color: #ef865b;
+    grid-column: 2;
+    grid-row: 3 / span 2;
+}
+
+#swimming {
+    background-color: rgba(224, 139, 100, 100%);
+    grid-column: 3;
+    grid-row: 3 / span 2;
+}

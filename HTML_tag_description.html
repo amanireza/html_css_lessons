@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--everything you add to the file must be a child of this second tag. The attribute "en" states the human language of the file are for screen reader uses (i.e. for hearing and captions or for translation). Tags are all in English but the content would be in whatever langauge is specified.-->
+    <head>
+        <!--Everythign about the page except the content of the page-->
+        <meta charset="UTF-8" />
+        <!--charsets exist because computers only understand numbers. This will contain all the characters of all the languages. On the web we use UTF-8. Cannot use UTF-32 or UTF-16 on a UTF-8 compatible device as the characters will be messed up-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- "Viewport" talks to the zoom in/out of the screen-->
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>This is a heading</h1>
+        <!-- Best Practice: limit one h1 to a page-->
+        <h2>This is a subheading</h2>
+        <p>This is a paragrapgh</p>
+        <p>This is a paragrapgh</p>
+        <img src="https://www.placecage.com/200/300" alt="Nick Cage" />
+        <!-- Screen readers will see the alt definition so it's important to add. If the source is incorrect the pic won't come up-->
+        <a href="http://google.com">Here's a link to Google</a>
+        <!-- the "a" in "a href" means anchor-->
+
+        <!--Non-semantic elements-->
+        <!--These elements provide no context as to whats in the tags-->
+        <di class="container"> <!--class is used for styling in CSS and can be attributed to multiple types of elements-->
+            <h1 id="exampleId">This is the title of our webpage</h1> <!--Id is unique to the element-->
+            <h2>This is the subtitle</h2>
+        </div>
+        <div>This is my navigation bar</div>
+        <div>
+            <div>This is a section of my page</div>
+            <div>
+                This is another
+                <span style="font-weight: bold">section of the page</span
+                ><!--"span" allows a container within a container-->
+            </div>
+        </div>
+
+        <!--Semantic elements-->
+        <!--Descriptive elements of what's inside the elements. This is helpful for SEO functions who read the description. -->
+        <!--Best practice: to use semantic elements-->
+        <header>
+            <h1>This is the title of the page</h1>
+            <h2>This is the subtitle</h2>
+        </header>
+        <nav>This is my navigation</nav>
+        <main>
+            <!--Best practice: one per page-->
+            <article><!--Makes sense on it's own i.e blog posts, user comments, newspaper articles-->
+                <h3>This is the article title</h3>
+                <p>This is the article preview text</p>
+            </article>
+            <section>
+                <h3>This is the contact section</h3>
+                <a href="http://gmail.com">Gmail</a>
+            </section>
+            <aside>
+                <!--would need to use CSS to style the aside section to the side of the page-->
+                <h3>This is the aside element</h3>
+            </aside>
+        </main>
+    </body>
+</html>

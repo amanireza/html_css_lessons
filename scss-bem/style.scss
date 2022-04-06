@@ -1,0 +1,17 @@
+.navbar {
+    border: 2px solid black;
+
+    &__list {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+.btn {
+    background-color: blue;
+
+    &--extra {
+        background-color: yellow;
+    }
+}

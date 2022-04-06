@@ -1,0 +1,41 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+table,
+th,
+td {
+  border: 1px solid;
+}
+
+th {
+  color: red;
+}
+
+.button {
+  background-color: #aec8d1;
+  border: 1px solid #487d8f;
+  border-radius: 5px;
+}
+.button:hover {
+  background-color: #487d8f;
+  color: white;
+  cursor: pointer;
+}
+.button--warning {
+  background-color: red;
+  border: 1px solid #a10f0f;
+  cursor: pointer;
+}
+.button--warning:hover {
+  background-color: #a10f0f;
+}

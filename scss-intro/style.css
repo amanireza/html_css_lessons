@@ -1,0 +1,26 @@
+.container {
+  border: 1px solid black;
+}
+.container__header {
+  color: blue;
+}
+.container__text {
+  font-family: arial;
+}
+.container__text--special {
+  color: green;
+}
+
+.container2 {
+  border: 2px solid purple;
+}
+.container2__text {
+  font-weight: bold;
+  color: green;
+}
+.container2__btn {
+  background-color: yellow;
+}
+.container2__btn--extra {
+  background-color: red;
+}

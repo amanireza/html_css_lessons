@@ -1,0 +1,32 @@
+.navbar {
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.navbar__list {
+    list-style: none;
+    display: flex;
+    padding: 0px;
+}
+
+.list__item {
+    margin: 5px 20px;
+}
+
+.navbar__list--space-between {
+    justify-content: space-between;
+}
+
+.list__sublist {
+    display: flex;
+    margin-right: 10px;
+}
+
+.navbar__list--space-around {
+    justify-content: space-around;
+}
+
+.navbar__list--reversed {
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}

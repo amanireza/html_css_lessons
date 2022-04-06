@@ -1,0 +1,31 @@
+//$colors should be a map
+
+@mixin gen-colors-modifiers($colors) {
+    @each $name, $color in $colors {
+        &--#{$name} {
+            background-color: $color;
+        }
+    }
+}
+
+//$colors should be a map
+@mixin gen-dark-colors-modifiers($colors) {
+    @each $name, $color in $colors {
+        &--#{$name} {
+            background-color: $color;
+
+            &:hover {
+                background-color: $color;
+            }
+        }
+    }
+}
+
+@mixin gen-sizing-modifiers($labels, $paddings, $font-sizes) {
+    @for $i from 1 through length($labels) {
+        &--#{nth($labels,$i)} {
+            font-size: nth($font-sizes, $i);
+            padding: nth($paddings, $i);
+        }
+    }
+}

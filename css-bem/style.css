@@ -1,0 +1,27 @@
+.box {
+    border: 1px solid black;
+}
+
+.box_para {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box_para--red {
+    color: red;
+}
+
+.box_para--blue {
+    color: blue;
+}
+
+.btn {
+    background-color: pink;
+}
+
+.btn--submit {
+    border: 2px solid green;
+}
+
+.btn--clear {
+    border: 2px dotted blue;
+}

@@ -1,0 +1,49 @@
+@use "_palette";
+
+$border-style: 1px solid #bfbfbf;
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    border: $border-style;
+
+    &__list {
+        color: palette.$tertiary-color;
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+.section {
+    text-align: center;
+
+    &__image {
+        border: 3px dashed palette.$secondary-color;
+    }
+
+    &__header {
+        color: palette.$primary-color;
+    }
+    &__text {
+        color: palette.$tertiary-color;
+    }
+}
+
+.footer {
+    border: $border-style;
+
+    &__header {
+        color: #10403b;
+
+        &--git:hover {
+            color: red;
+        }
+    }
+}
+
+a:link {
+    color: palette.$primary-color;
+}

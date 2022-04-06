@@ -1,0 +1,23 @@
+@use "palette";
+
+.button {
+    background-color: palette.$primary;
+    border: 1px solid palette.$primary-hovered;
+    border-radius: 5px;
+
+    &:hover {
+        background-color: palette.$primary-hovered;
+        color: palette.$primary-text-inverse;
+        cursor: pointer;
+    }
+
+    &--warning {
+        background-color: palette.$warning;
+        border: 1px solid palette.$warning-hovered;
+        cursor: pointer;
+
+        &:hover {
+            background-color: palette.$warning-hovered;
+        }
+    }
+}

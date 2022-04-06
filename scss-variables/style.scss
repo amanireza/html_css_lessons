@@ -1,0 +1,22 @@
+$primary-color: rgb(152, 152, 233);
+$secondary-color: rgb(236, 180, 159);
+$border-style: dotted;
+$border-size: 1px;
+$border: 3px solid black;
+
+.container {
+    border: $border-size $border-style black;
+}
+
+.btn {
+    background-color: rgb(152, 152, 233);
+    &--secondary {
+        background-color: $secondary-color;
+    }
+}
+.text {
+    &--secondary {
+        color: $secondary-color;
+        border: $border;
+    }
+}

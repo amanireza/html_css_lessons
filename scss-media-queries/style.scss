@@ -1,0 +1,29 @@
+$sm: 500px;
+$md: 800px;
+
+.btn {
+    @media only screen and (max-width: $sm) {
+        background-color: yellow;
+        font-size: 30px;
+    }
+    @media only screen and (min-width: ($sm + 1px)) and (max-width: $md) {
+        background-color: green;
+        font-size: 50px;
+    }
+    @media only screen and (min-width: ($md + 1px)) {
+        background-color: blue;
+        font-size: 80px;
+    }
+}
+
+.container {
+    @media only screen and (max-width: $sm) {
+        display: flex;
+        flex-direction: column;
+    }
+    @media only screen and (min-width: ($sm + 1px)) and (max-width: $md) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}

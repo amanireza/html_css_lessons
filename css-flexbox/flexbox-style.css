@@ -1,0 +1,28 @@
+body {
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.flexbox-container {
+    height: 300px;
+    width: 900px;
+    display: flex;
+}
+.card {
+    width: 33.3%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#card1 {
+    background-color: #add8e5;
+}
+
+#card2 {
+    background-color: #ffa501;
+}
+
+#card3 {
+    background-color: #ff69b4;
+}

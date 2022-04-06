@@ -1,0 +1,24 @@
+@use "palette";
+@use "mixins";
+
+$font-sizes: (0.8rem, 1rem, 1.2rem);
+$pad-sizes: (5px, 10px, 15px);
+$size-labels: ("sm", "md", "lg");
+
+.button {
+    color: map-get(palette.$font-colors, "inversed");
+    background-color: map-get(palette.$colors, "primary");
+    font-size: nth($font-sizes, 2);
+    padding: nth($pad-sizes, 2);
+    border-radius: 30px;
+    border: 1px solid map-get(palette.$dark-colors, "primary");
+
+    &:hover {
+        cursor: pointer;
+        background-color: map-get(palette.$dark-colors, "secondary");
+        @include mixins.gen-dark-colors-modifiers(palette.$dark-colors);
+    }
+
+    @include mixins.gen-sizing-modifiers($size-labels, $pad-sizes, $font-sizes);
+    @include mixins.gen-colors-modifiers(palette.$colors);
+}

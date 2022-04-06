@@ -1,0 +1,37 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 900px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space between;
+}
+
+.card {
+    height: 100%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+}
+
+#card4 {
+    background-color: #add8e5;
+}
+
+#card5 {
+    background-color: #ffa501;
+}
+
+#card6 {
+    background-color: #ff69b4;
+}
+
+#card7 {
+    background-color: #dc143c;
+}

@@ -1,0 +1,28 @@
+// Group of colors
+
+// Groupd of colors, app colors (background color for components)
+$colors: (
+    "primary": rgb(150, 150, 228),
+    "secondary": #444,
+    "success": green,
+    "danger": red,
+    "warning": rgb(255, 208, 0),
+    "info": rgb(9, 158, 158),
+);
+
+$dark-colors: (
+    "primary": rgb(38, 38, 190),
+    "secondary": #444,
+    "success": rgb(4, 88, 4),
+    "danger": rgb(196, 2, 2),
+    "warning": rgb(255, 208, 0),
+    "info": rgb(8, 107, 107),
+);
+
+// Group font colors
+$font-colors: (
+    "header": #333,
+    "header2": #455,
+    "body": #666,
+    "inversed": white,
+);

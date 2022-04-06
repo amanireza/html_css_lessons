@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.final {
+    background-color: #90ed90;
+}
+.big {
+    border: 2px solid #ff7f7f;
+    padding: 20px 0px;
+}
+.pink {
+    background-color: #ff69b4;
+    padding: 20px;
+    border: 1px solid #ff7f4f;
+}
+
+p {
+    margin-left: 30px;
+}

@@ -1,0 +1,58 @@
+.flag {
+  border: 1px solid black;
+}
+.flag__stripe {
+  border: 1px solid black;
+  height: 40vh;
+  width: 90vw;
+}
+@media only screen and (max-width: 600px) {
+  .flag {
+    height: 33.33%;
+    width: 100%;
+  }
+  .flag__stripe--one {
+    background-color: red;
+  }
+  .flag__stripe--two {
+    background-color: yellow;
+  }
+  .flag__stripe--three {
+    background-color: black;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  .flag {
+    height: 100%;
+    width: 33.333%;
+    display: flex;
+  }
+  .flag__stripe--one {
+    background-color: red;
+  }
+  .flag__stripe--two {
+    background-color: yellow;
+  }
+  .flag__stripe--three {
+    background-color: purple;
+  }
+}
+@media only screen and (min-width: 901px) {
+  .flag {
+    height: 100%;
+    width: 33.333%;
+    display: flex;
+  }
+  .flag__stripe {
+    display: flex;
+  }
+  .flag__stripe--one {
+    background-color: green;
+  }
+  .flag__stripe--two {
+    background-color: white;
+  }
+  .flag__stripe--three {
+    background-color: orange;
+  }
+}

@@ -1,0 +1,11 @@
+.border-style, .bottom-box, .top-box {
+  border: 1px solid red;
+}
+
+.top-box {
+  padding: 15px;
+}
+
+.bottom-box {
+  padding: 15px;
+}

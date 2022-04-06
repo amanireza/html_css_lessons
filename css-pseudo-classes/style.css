@@ -1,0 +1,63 @@
+/* : hover-pseudo-class */
+a:hover {
+    color: brown;
+}
+
+p:hover {
+    color: aqua;
+    background-color: blue;
+    cursor: pointer;
+}
+
+.container > p:hover {
+    color: black;
+    background-color: white;
+}
+
+/* :first-of-type and :nth-of-type() */
+.container > h2:first-of-type {
+    color: blueviolet;
+}
+
+.container > p:nth-of-type(3) {
+    color: aquamarine;
+}
+
+/* :last-of-type and :nth-of-type() */
+
+.container > p:last-of-type {
+    color: green;
+}
+
+.container > p:nth-last-of-type(2) {
+    color: rgb(128, 128, 27);
+}
+
+/*link-related pseduo-classes*/
+/* Unvisited link*/
+a:link {
+    color: aqua;
+}
+/* Visited link*/
+a:visited {
+    color: red;
+}
+/* Hover over link*/
+a:hover {
+    color: green;
+}
+/* Hold down link*/
+a:active {
+    background-color: pink;
+}
+
+/* Input related */
+form > input:optional {
+    border: 2px solid green;
+}
+form > input:required {
+    border: 2px solid red;
+}
+form > input:enabled {
+    border: 2px dotted hotpink;
+}

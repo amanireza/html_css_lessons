@@ -1,0 +1,32 @@
+@mixin flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+@mixin sizing($sm, $md, $lg: 10px) {
+    &--small {
+        font-size: $sm;
+    }
+    &--medium {
+        font-size: $md;
+    }
+    &--large {
+        font-size: $lg;
+    }
+}
+
+.btn {
+    @include sizing(4px, 7px);
+}
+nav {
+    @include flex;
+}
+
+ul {
+    @include flex;
+    list-style: none;
+}
+
+section {
+    @include flex;
+}

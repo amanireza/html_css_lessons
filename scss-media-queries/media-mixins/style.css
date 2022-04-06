@@ -1,0 +1,37 @@
+@media only screen and (max-width: 390px) {
+  .btn {
+    background-color: purple;
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 391px) and (max-width: 820px) {
+  .btn {
+    background-color: #7b7be0;
+    font-size: 40px;
+  }
+}
+@media only screen and (min-width: 821px) and (max-width: 10244px) {
+  .btn {
+    background-color: yellow;
+    font-size: 60px;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .box {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 391px) and (max-width: 820px) {
+  .box {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media only screen and (min-width: 821px) and (max-width: 10244px) {
+  .box {
+    display: flex;
+    flex-direction: row;
+  }
+}

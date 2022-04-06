@@ -1,0 +1,31 @@
+* {
+    margin: 20px;
+}
+.container {
+    border: 1px solid black;
+}
+
+.container__header {
+    font-family: Arial, Helvetica, sans-serif;
+    color: blue;
+}
+
+.container__text--main {
+    color: red;
+    text-decoration: underline;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container__list--no-bullet {
+    list-style: none;
+    font-family: arial;
+}
+
+.container__text--outside {
+    color: coral;
+    font-weight: bold;
+}
+
+.text--brown {
+    color: brown;
+}

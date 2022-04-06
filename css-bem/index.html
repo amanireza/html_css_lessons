@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>BEM</title>
+    </head>
+    <body>
+        <!-- 
+    What does BEM stand for?
+    Block_Element_Modifier
+    Why do we use BEM?
+    How do we write BEM CSS?
+  -->
+
+        <div class="box">
+            <h1>This is a block</h1>
+            <p class="box_para">This is my first element</p>
+            <p class="box_para box_para--red">
+                This is my second element and it has some diffeent styling
+            </p>
+            <button class="btn btn--sumbit">Submit</button>
+        </div>
+        <div class="box">
+            <h1>This is a block</h1>
+            <p class="box_para box_para--red">This is my first element</p>
+            <p class="box_para box_para--red">
+                This is my second element, and it has some different styling
+            </p>
+            <button class="btn btn--clear">Clear</button>
+        </div>
+        <button class="btn btn--submit">Submit</button>
+    </body>
+</html>

@@ -1,0 +1,51 @@
+$xs: 390px;
+$sm: 820px;
+$md: 10244px;
+
+@mixin phone {
+    @media only screen and (max-width: $xs) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media only screen and (min-width: ($xs+ 1px)) and (max-width: $sm) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media only screen and (min-width: ($sm + 1px)) and (max-width: $md) {
+        @content;
+    }
+}
+.btn {
+    @include phone {
+        background-color: purple;
+        font-size: 20px;
+    }
+
+    @include tablet {
+        background-color: rgb(123, 123, 224);
+        font-size: 40px;
+    }
+    @include desktop {
+        background-color: yellow;
+        font-size: 60px;
+    }
+}
+
+.box {
+    @include phone {
+        display: flex;
+        flex-direction: column;
+    }
+    @include tablet {
+        display: flex;
+        flex-direction: row;
+    }
+    @include desktop {
+        display: flex;
+        flex-direction: row;
+    }
+}

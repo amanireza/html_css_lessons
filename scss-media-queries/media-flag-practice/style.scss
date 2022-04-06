@@ -1,0 +1,53 @@
+$sm: 600px;
+$md: 900px;
+
+@mixin stripeColor($firstColor, $secondColor, $thirdColor) {
+    &--one {
+        background-color: $firstColor;
+    }
+    &--two {
+        background-color: $secondColor;
+    }
+    &--three {
+        background-color: $thirdColor;
+    }
+}
+
+@mixin sizeModifier($height, $width) {
+    height: $height;
+    width: $width;
+}
+
+.flag {
+    border: 1px solid black;
+
+    &__stripe {
+        border: 1px solid black;
+        height: 40vh;
+        width: 90vw;
+    }
+
+    @media only screen and (max-width: $sm) {
+        @include sizeModifier(33.33%, 100%);
+        &__stripe {
+            @include stripeColor(red, yellow, black);
+        }
+    }
+
+    @media only screen and (min-width: ($sm+1px)) and (max-width: $md) {
+        @include sizeModifier(100%, 33.333%);
+        display: flex;
+        &__stripe {
+            @include stripeColor(red, yellow, purple);
+        }
+    }
+
+    @media only screen and (min-width: ($md+1px)) {
+        @include sizeModifier(100%, 33.333%);
+        display: flex;
+        &__stripe {
+            @include stripeColor(green, white, orange);
+            display: flex;
+        }
+    }
+}

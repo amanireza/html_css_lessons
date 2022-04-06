@@ -1,0 +1,15 @@
+.container {
+  border: 1px dotted black;
+}
+
+.btn {
+  background-color: #9898e9;
+}
+.btn--secondary {
+  background-color: #ecb49f;
+}
+
+.text--secondary {
+  color: #ecb49f;
+  border: 3px solid black;
+}

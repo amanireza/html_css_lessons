@@ -1,0 +1,17 @@
+.border-style {
+    border: 1px solid red;
+}
+
+@mixin padding {
+    padding: 15px;
+}
+
+.top-box {
+    @extend .border-style;
+    @include padding;
+}
+
+.bottom-box {
+    @extend .border-style;
+    @include padding;
+}

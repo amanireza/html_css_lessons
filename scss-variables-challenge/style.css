@@ -1,0 +1,40 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  border: 1px solid #bfbfbf;
+}
+.navbar__list {
+  color: yellow;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.section {
+  text-align: center;
+}
+.section__image {
+  border: 3px dashed orange;
+}
+.section__header {
+  color: lightgreen;
+}
+.section__text {
+  color: yellow;
+}
+
+.footer {
+  border: 1px solid #bfbfbf;
+}
+.footer__header {
+  color: #10403b;
+}
+.footer__header--git:hover {
+  color: red;
+}
+
+a:link {
+  color: lightgreen;
+}

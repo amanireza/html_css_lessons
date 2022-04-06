@@ -1,0 +1,19 @@
+/* descendant combinator*/
+div.container p {
+    color: red;
+}
+
+/* child combinator (>) */
+div.container > p {
+    color: blue;
+}
+
+/*adjacent sibling combinator - only first sibling */
+div.container + p {
+    color: green;
+}
+
+/*general sibling combinator - all siblings */
+div.container ~ p {
+    font-weight: bold;
+}
